@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Custom Footer -->
+
+        <LinearLayout
+            android:id="@+id/asc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/as"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/activity_profile_oval"
+                android:orientation="vertical"
+                android:layout_weight="70">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pro_tv_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:text="Log Out"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/raleway_bold"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_weight="30">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_marginTop="75dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/rel1"
+                            android:layout_width="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <EditText
+                                    android:id="@+id/pro_et_ac_nama"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:drawablePadding="5dp"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:text="Rika Zikari" />
+
+                                <ImageView
+                                    android:id="@+id/pro_ac_img_nama"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@id/pro_et_ac_nama"
+                                    android:src="@drawable/ic_edit_black_24dp"/>
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/tv_ket"
+                            android:layout_below="@+id/rel1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/raleway"
+                            android:textSize="20dp"
+                            android:text="Data sudah dilindungi"/>
+
+                        <!--                        <EditText-->
+                        <!--                            android:id="@+id/edt_coba"-->
+                        <!--                            android:layout_below="@+id/tv_ket"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:drawableRight="@mipmap/ic_launcher"-->
+                        <!--                            android:textSize="16dp"-->
+                        <!--                            android:text="coba"/>-->
+
+
+
+                        <!--                        <Button-->
+                        <!--                            android:id="@+id/btn_coba"-->
+                        <!--                            android:layout_below="@+id/tv_ket"-->
+                        <!--                            android:layout_toRightOf="@id/edt_coba"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:text="EDIT"/>-->
+
+                        <!--                        <Button-->
+                        <!--                            android:id="@+id/btn_save"-->
+                        <!--                            android:layout_below="@+id/tv_ket"-->
+                        <!--                            android:layout_toRightOf="@id/edt_coba"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:visibility="invisible"-->
+                        <!--                            android:text="Save"/>-->
+
+                        <LinearLayout
+                            android:layout_below="@id/tv_ket"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/raleway"
+                                android:text="Alamat"/>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true" >
+
+                                <EditText
+                                    android:id="@+id/pro_et_ac_alamat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableRight="@drawable/ic_edit_black_24dp"
+                                    android:fontFamily="@font/raleway"
+                                    android:text="ahahhaa" />
+
+                                <Button
+                                    android:id="@+id/pro_bt_ac_alamat"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:text=" "
+                                    android:background="@android:color/transparent"
+                                    />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/raleway"
+                                android:text="No. Telp"/>
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true" >
+
+                                <EditText
+                                    android:id="@+id/pro_et_ac_notelp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableRight="@drawable/ic_edit_black_24dp"
+
+                                    android:text="ahahhaa" />
+
+                                <Button
+                                    android:id="@+id/pro_bt_ac_notelp"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:text=" "
+                                    android:background="@android:color/transparent"
+                                    />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/raleway"
+                                android:text="Password"/>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true" >
+
+                                <EditText
+                                    android:id="@+id/pro_et_ac_password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableRight="@drawable/ic_edit_black_24dp"
+                                    android:fontFamily="@font/raleway"
+                                    android:inputType="textPassword"
+                                    android:text="ahahhaa" />
+
+                                <Button
+                                    android:id="@+id/pro_bt_ac_password"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:text=" "
+                                    android:background="@android:color/transparent"
+                                    />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            card_view:cardElevation="0dp"
+            card_view:layout_anchor="@+id/as"
+            card_view:layout_anchorGravity="center|bottom">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pro_image_main"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="#fff"
+                app:civ_border_width="2dp"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

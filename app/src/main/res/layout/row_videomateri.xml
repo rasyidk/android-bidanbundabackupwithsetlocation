@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp"
+    tools:context=".bottomnavigation.videomateri.nav_videomateri">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rel_vm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/img_vm"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_vm">
+
+            <TextView
+                android:id="@+id/tv_judul"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="MINGGU ke 1"
+                android:fontFamily="@font/raleway_semibold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_waktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oleh Bidan suarez"
+                android:textColor="@color/black"
+                android:fontFamily="@font/raleway"
+                android:layout_below="@+id/tv_judul"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video Total : 0"
+                android:fontFamily="@font/raleway"
+                android:layout_below="@+id/tv_waktu"/>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
